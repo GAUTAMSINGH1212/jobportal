@@ -1,0 +1,62 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variable files
+.env
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output directories
+build/
+dist/
+out/
+
+# Cache directories
+.cache/
+.next/
+.nuxt/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Database files (if applicable)
+*.sqlite3
+*.db
+
+# Compiled files (for TypeScript, etc.)
+*.tsbuildinfo
+*.js
+*.d.ts
+*.map
+*.jsx
+*.tsx
+*.ts
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
