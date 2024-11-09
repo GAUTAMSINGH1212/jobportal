@@ -1,27 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import Navbar from './layout/header';
+import Footer from './layout/footer';
 
-function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    // Make GET request using Axios
-    axios.get('http://localhost:8000/api/register')
-      .then(response => {
-        setMessage(response);
-        console.log()
-      })
-      .catch(error => {
-        console.error('Error fetching the API:', error);
-      });
-  }, []);
-
+const Home = () => {
   return (
-    <div>
-      <h1>GET API Example</h1>
-     
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow container mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold mb-6">Home Page</h2>
+        <p>Welcome to the home page!</p>
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
