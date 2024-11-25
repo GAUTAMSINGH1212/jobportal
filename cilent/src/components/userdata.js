@@ -22,7 +22,7 @@ const Home = () => {
       <main className="flex-grow container mx-auto px-4 py-8">
         <h2 className="text-2xl font-bold mb-6">Home Page</h2>
         <p>Welcome to the home page!</p>
-{console.log(data) }
+{/* {console.log(data) } */}
         {/* Card for displaying the API data */}
         <div className="max-w-sm mx-auto mt-8 bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="p-6">
